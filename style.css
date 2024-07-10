@@ -1,0 +1,60 @@
+h1 {
+ color: blue;
+ text-align: center;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+#left-container {
+	background-color: #aaa;
+	width: 15%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+#right-container {
+	background-color: #aaa;
+	width: 15%;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+#HitBox {
+	color: black;
+	width: 40%;
+	right: 50px;
+	top: 0px;
+}
+
+.berry-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.berry {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+
+.bush {
+	z-index: 0;
+	margin-left: 450px;
+	margin-top: -20px;
+}
+
+button {
+	position: fixed;
+	left: 20%;
+	top: 2%;
+}

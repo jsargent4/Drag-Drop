@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to our Blue Berry Farm</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1 style="color: blue">Best Blue Berry Farm!</h1>
+
+    <button class="countdown-button" onclick="startCountdown()">Start Game!</button>
+
+    <script>
+    function startCountdown() {
+        var countdown = 10; 
+        var countdownButton = document.querySelector('.countdown-button'); 
+        
+        countdownButton.disabled = true; 
+        
+        var countdownInterval = setInterval(function() {
+            countdown--; 
+            countdownButton.textContent = 'Countdown: ' + countdown; 
+            
+            if (countdown <= 0) {
+                clearInterval(countdownInterval); 
+                countdownButton.textContent = 'You lose! Refresh to reset the berries and try again.'; 
+                countdownButton.disabled = false; 
+            }
+        }, 1000); 
+    }
+    </script>
+
+    <div id="page">
+        <div id="left-container" class="container">
+            <div class="berry-holder">
+                <img class="berry" alt="berry" id="berry1" src="./images/chadberry.png" />
+            </div>
+            <div class="berry-holder">
+                <img class="berry" alt="berry" id="berry2" src="./images/Berry2.png" />
+            </div>
+            <div class="berry-holder">
+                <img class="berry" alt="berry" id="berry3" src="./images/Berry3.png" />
+            </div>
+        </div>
+        <div id="right-container" class="container">
+            <div class="berry-holder">
+                <img class="berry" alt="berry" id="berry4" src="./images/Berry4.png" />
+            </div>
+            <div class="berry-holder">
+                <img class="berry" alt="berry" id="berry5" src="./images/Berry5.png" />
+            </div>
+            <div class="berry-holder">
+                <img class="berry" alt="berry" id="berry6" src="./images/Berry6.png" />
+            </div>
+        </div>
+
+        <div id="HitBox">
+    
+        </div>
+
+        <div id="terrarium">
+            <img class="bush" src="./images/Good Bush.png" alt="Bush" id="bush">
+        </div>
+    </div>
+</body>
+</html>
