@@ -1,0 +1,21 @@
+<button class="countdown-button" onclick="startCountdown()">Start Game!</button>
+
+    <script>
+    function startCountdown() {
+        var countdown = 10; 
+        var countdownButton = document.querySelector('.countdown-button'); 
+        
+        countdownButton.disabled = true; 
+        
+        var countdownInterval = setInterval(function() {
+            countdown--; 
+            countdownButton.textContent = 'Countdown: ' + countdown; 
+            
+            if (countdown <= 0) {
+                clearInterval(countdownInterval); 
+                countdownButton.textContent = 'You lose! Refresh to reset the berries and try again.'; 
+                countdownButton.disabled = false; 
+            }
+        }, 1000); 
+    }
+    </script>
