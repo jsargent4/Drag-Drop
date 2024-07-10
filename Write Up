@@ -1,5 +1,9 @@
 Game: You have 10 seconds to place all berries onto the bush. If you don't get them all on, the user is then prompted to refresh the page and restart.
 
+AI Usage: We used AI to help us with the button script. We also used Stacked Overflow for the button as well.
+
+GitHub Link: https://github.com/jsargent4/Drag-Drop
+
 Members:
 George Luce 
 Ryan Traynor
